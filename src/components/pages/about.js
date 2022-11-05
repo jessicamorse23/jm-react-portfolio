@@ -1,7 +1,7 @@
 import React from "react";
 // stylesheet
 
-export default function about() {
+export default function About() {
 return ( 
   <div className="about">
     <p>

@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
-import navbar from './navbar.js';
-import header from './header.js';
-import footer from './footer.js';
-import about from './pages/about.js';
-import contact from './pages/contact.js';
-import portfolio from './pages/portfolio';
+import Navbar from './Navbar.js';
+import Header from './Header.js';
+import Footer from './Footer.js';
+import About from './pages/About.js';
+import Contact from './pages/Contact.js';
+import Portfolio from './pages/Portfolio';
 // Source code - NU Module 20.13
 
-export default function porfolioStart() {
-  const [pageView, setPageView] = useState('portfolio');
+export default function PorfolioStart() {
+  const [currentPage, setCurrentPage] = useState('Portfolio');
 
 const renderPage = () => {
-  if (currentPage === 'portfolio') {
-    return <portfolio/>;
+  if (currentPage === 'Portfolio') {
+    return <Portfolio/>;
   }
-  if (currentPage === 'about') {
-    return <about/>;
+  if (currentPage === 'About') {
+    return <About/>;
   }
-  return <contact/>;
+  return <Contact/>;
 };
 
-const handlePageChange = (page) => setPageView(page);
+const handlePageChange = (page) => setCurrentPage(page);
 return (
   <div>
     <header/>
-    <navbar pageView={pageView} handlePageChange={handlePageChange} />
+    <Navbar pageView={currentPage} handlePageChange={handlePageChange} />
     {renderPage()}
     <footer />
   </div>
