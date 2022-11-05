@@ -4,7 +4,7 @@ import React from "react";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="navbar navbar-expand-lg bg-light">
       <li className="nav-item"><a href="#portfolio" onClick={() => handlePageChange('portfolio')}
       className={currentPage === 'portfolio' ? 'nav-link active' : 'nav-link'}>Portfolio</a></li>
       <li className="nav-item">

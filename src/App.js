@@ -1,7 +1,7 @@
 import React from "react";
-import portfolioStart from "./components/PortfolioStart";
+import PortfolioStart from "./components/PortfolioStart";
 
-const App = () => <portfolioStart />;
+const App = () => <PortfolioStart />;
 
 export default App;
 // Source code - NU Module 20.13
