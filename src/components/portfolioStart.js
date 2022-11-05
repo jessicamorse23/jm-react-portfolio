@@ -7,7 +7,7 @@ import contact from './pages/contact.js';
 import portfolio from './pages/portfolio';
 // Source code - NU Module 20.13
 
-export default function porfolio() {
+export default function porfolioStart() {
   const [pageView, setPageView] = useState('portfolio');
 
 const renderPage = () => {
