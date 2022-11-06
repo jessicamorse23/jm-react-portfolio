@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import "../styles/portfolioCarousel.css"
+import "../styles/portfolioCarousel.css";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
 
