@@ -1,24 +1,24 @@
 import React from 'react';
-import "../styles/portfolio.css";
+import '../styles/portfolio.css';
 import PortfolioCarousel from './PortfolioCarousel';
-import PlaylistProducer from '../../assets/PlaylistProducer.png';
-
+import { Projects } from './projects/Projects';
+import ProjectCont from './projects/ProjectCont';
 
 export default function Portfolio() {
   return (
-    <div name="portfolio" className="w-full md:h-screen" id="portfolio">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-content-center w-full h-full">
-        <div className="pb-8 mt-96">
-          <h1 className="font-bold">Some of My Projects</h1>
-        </div>
-        <div >
+    <section className="d-flex justify-content-center">
+      <div className="justify-content-center" id="portfolio">
+        <h1 className="p-3 font-bold">A Portfolio of Projects</h1>
+        <div>
           <PortfolioCarousel />
         </div>
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-        <div style={{ backgroundImage: `url(${PlaylistProducer})` }} className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+        <h2>Projects</h2>
+        <div className="row">
+          {Projects.map((project, index) => (
+            <ProjectCont project={project} key={`${project.name}-${index}`} />
+          ))}
         </div>
       </div>
-    </div>
-    </div>
+    </section>
   );
 }
