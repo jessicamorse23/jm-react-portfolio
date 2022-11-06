@@ -7,27 +7,27 @@ import Contact from './pages/Contact.js';
 import Portfolio from './pages/Portfolio';
 // Source code - NU Module 20.13
 
-export default function PorfolioStart() {
-  const [currentPage, setCurrentPage] = useState('Portfolio');
+export default function PortfolioStart() {
+  const [pageView, setPageView] = useState('Portfolio');
 
 const renderPage = () => {
   if (currentPage === 'Portfolio') {
-    return <Portfolio/>;
+    return <Portfolio />;
   }
   if (currentPage === 'About') {
-    return <About/>;
+    return <About />;
   }
-  return <Contact/>;
-};
+  if (currentPage === 'Contact')
+  return <Contact />;
 
-const handlePageChange = (page) => setCurrentPage(page);
+};
+const handlePageChange = (page) => setPageView(page);
 return (
   <div>
     <header/>
-    <Navbar pageView={currentPage} handlePageChange={handlePageChange} />
+    <navbar pageView={pageView} handlePageChange={handlePageChange} />
     {renderPage()}
     <footer />
   </div>
 );
 }
-
