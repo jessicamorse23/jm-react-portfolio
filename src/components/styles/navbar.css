@@ -2,14 +2,14 @@
 
 .navbar {
   justify-content: space-around;
-  background-color: #406e8e;
+  background-color: #004da0;
   width: auto;
   height: 5rem;
   list-style-type: none;
 }
 .nav-item {
   align-items: center;
-  color: #23395b;
+  color: white;
   font-size: large;
   font-weight: bolder;
   

@@ -1,11 +1,11 @@
 import React from "react";
-// stylesheet
+import "./styles/footer.css";
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer className="footer">
       <div>
-        {/* add bootstrap */}
+  <p>Jessica's Coding Adventure. Est. 2022</p>
       </div>
     </footer>
   )

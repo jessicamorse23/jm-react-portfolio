@@ -1,4 +1,11 @@
 .carousel {
-  padding: 6rem;
+  /* margin-left: 3rem; */
+  padding-inline-start: 8rem;
   align-items: center;
+  opacity: 1;
+  color: #0058b6;
+}
+
+.carousel-item {
+  text-align: center;
 }

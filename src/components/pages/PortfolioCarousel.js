@@ -1,38 +1,49 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import "../styles/portfolioCarousel.css"
+
+const captionStyle = {
+  color: "#0058b6",
+  backgroundColor: "AliceBlue", 
+  // padding: "2rem",
+}
 
 function PortfolioCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
+      <a href="https://jessicamorse23.github.io/Playlist-Producer/" target='#'>
         <img
-          className="h-50 d-block w-50"
-          src={require('../../assets/image1.png')}
-          alt="First slide"
+          className="d-block w-95"
+          src={require('../../assets/PlaylistProducer.png')}
+          alt="Playlist Producer"
         />
+        </a>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 style={captionStyle}>Playlist Producer</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="h-50 d-block w-50" src={require("../../assets/image3.png")} alt="Second slide" />
-
+      <a href="https://github.com/jessicamorse23/Team-Profile-Generator" target='#'>
+        <img className="d-block w-95" src={require("../../assets/TeamProfiles.png")} 
+        alt="Team Profile Generator" />
+       
+</a>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 style={captionStyle}>Team Profile Generator</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
+      <a href="https://jessicamorse23.github.io/WorkDayScheduler-Challenge5/" target='#'>
         <img
-          className="h-50 d-block w-50"
-          src={require('../../assets/image2.png')}
-          alt="Third slide"
+          className="d-block w-95"
+          src={require('../../assets/WorkDayScheduler.png')}
+          alt="Workday Scheduler"
         />
+        </a>
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3 style={captionStyle}>Third slide label</h3>
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </Carousel.Caption>
       </Carousel.Item>
