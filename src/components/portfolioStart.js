@@ -4,11 +4,11 @@ import Header from './Header.js';
 import Footer from './Footer.js';
 import About from './pages/About.js';
 import Contact from './pages/Contact.js';
-import Portfolio from './pages/Portfolio';
+import Portfolio from './pages/Portfolio.js';
 // Source code - NU Module 20.13
 
 export default function PortfolioStart() {
-  const [pageView, setPageView] = useState('Portfolio');
+  const [currentPage, setCurrentPage] = useState('Portfolio');
 
 const renderPage = () => {
   if (currentPage === 'Portfolio') {
@@ -21,11 +21,11 @@ const renderPage = () => {
   return <Contact />;
 
 };
-const handlePageChange = (page) => setPageView(page);
+const handlePageChange = (page) => setCurrentPage(page);
 return (
   <div>
     <Header />
-    <Navbar pageView={pageView} handlePageChange={handlePageChange} />
+    <Navbar pageView={currentPage} handlePageChange={handlePageChange} />
     {renderPage()}
     <Footer />
   </div>
