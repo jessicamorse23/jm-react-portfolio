@@ -24,10 +24,10 @@ const renderPage = () => {
 const handlePageChange = (page) => setPageView(page);
 return (
   <div>
-    <header/>
-    <navbar pageView={pageView} handlePageChange={handlePageChange} />
+    <Header />
+    <Navbar pageView={pageView} handlePageChange={handlePageChange} />
     {renderPage()}
-    <footer />
+    <Footer />
   </div>
 );
 }
