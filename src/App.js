@@ -9,6 +9,7 @@ import React from 'react';
 // import Footer from './components/Footer'
 import PortfolioStart from "./components/PortfolioStart";
 
+
 const App = () => <PortfolioStart />;
 
 export default App;

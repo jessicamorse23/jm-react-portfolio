@@ -1,8 +1,9 @@
-// add css link 
+import { Container } from "react-bootstrap"
+
 
 const ProjectCont = ({ project }) => (
-
-  <div className="card" style={{width: '18 rem'}}>
+<Container>
+  <div className="card" style={{width: '10 rem'}}>
     <img className="card-img-top" src={project.img} alt="Card image cap"/>
     <div className="card-body">
       <h4 className="card-title">{project.name}</h4>
@@ -11,6 +12,7 @@ const ProjectCont = ({ project }) => (
       <a href={project.liveLink} className="btn btn-secondary">Live</a>
     </div>
   </div>
+</Container>
 
 )
 

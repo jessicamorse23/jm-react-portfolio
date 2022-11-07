@@ -23,7 +23,7 @@ const renderPage = () => {
 };
 const handlePageChange = (page) => setCurrentPage(page);
 return (
-  <div>
+  <div className='overall-container'>
     <Header />
     <Navbar pageView={currentPage} handlePageChange={handlePageChange} />
     {renderPage()}

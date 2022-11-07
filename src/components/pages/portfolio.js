@@ -1,24 +1,22 @@
 import React from 'react';
-import '../styles/portfolio.css';
-import PortfolioCarousel from './PortfolioCarousel';
+// import PortfolioCarousel from './PortfolioCarousel';
 import { Projects } from './projects/Projects';
 import ProjectCont from './projects/ProjectCont';
 
 export default function Portfolio() {
   return (
-    <section className="d-flex justify-content-center">
+    <div id="portfolio" className="d-flex justify-content-center">
       <div className="justify-content-center" id="portfolio">
         <h1 className="p-3 font-bold">A Portfolio of Projects</h1>
         <div>
-          <PortfolioCarousel />
+          {/* <PortfolioCarousel /> */}
         </div>
-        <h2>Projects</h2>
-        <div className="row">
+        <div className="card-container">
           {Projects.map((project, index) => (
             <ProjectCont project={project} key={`${project.name}-${index}`} />
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
