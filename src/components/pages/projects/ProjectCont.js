@@ -1,5 +1,9 @@
 import { Container } from "react-bootstrap"
 
+const btn = {
+  color: "#0058b6",
+  backgroundColor: "white", 
+}
 
 const ProjectCont = ({ project }) => (
 <Container>
@@ -8,8 +12,8 @@ const ProjectCont = ({ project }) => (
     <div className="card-body">
       <h4 className="card-title">{project.name}</h4>
       <p className="card-text">{project.description}</p>
-      <a href={project.repo} className="btn link-btn">Github</a>
-      <a href={project.liveLink} className="btn link-btn">Live</a>
+      <a href={project.repo} className="btn me-2" style={btn}>Github</a>
+      <a href={project.liveLink} className="btn me-2" style={btn}>Live</a>
     </div>
   </div>
 </Container>
