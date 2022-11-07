@@ -43,11 +43,11 @@ height: 100%;
 .about {
   min-height: 100%;
 }
-
+/* 
 nav {
   background-color: #4c9f70;
   color: white;
-}
+} */
 
 li {
   list-style: none;
@@ -83,8 +83,8 @@ color: white;
 
 }
 .card {
-  padding: 10px;
-  margin: 30px;
+  padding: 15px;
+  margin: 50px;
   background-color: #6279b8 !important;
   box-shadow: 0px 0px 10px 5px #6279b8;
 
@@ -96,4 +96,11 @@ color: white;
   margin: 10px;
   border-radius: 12px;
   box-shadow: 0px 0px 10px 5px #6279b8;
+}
+
+.link-btn {
+  padding: 5px;
+  margin: 5px;
+  background-color: #a9bcff;
+  color: white;
 }
